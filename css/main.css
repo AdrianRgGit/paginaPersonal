@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.imgPersona {
+  width: 50%;
+}
+
+/* .container {
+  border: solid red;
+} */
+
+/* Cabecera */
+
+header.container {
+  padding: 10px;
+  text-align: justify;
+  background-color: rgb(220, 200, 200);
+}
+
+header h1,
+h2,
+p {
+  display: block;
+  width: 100%;
+  margin: 10px;
+}
+
+header h1 {
+  font-weight: 900;
+}
+
+header h2 {
+  color: white;
+  font-weight: 800;
+}
+
+header p {
+  font-weight: 600;
+}
+
+/* Fin Cabecera */
+
+/* Nav */
+
+nav.nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(242, 216, 216);
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  margin-left: 50px;
+  padding: 5px 10px;
+  background-color: rgb(92, 137, 132);
+  border-radius: 5px;
+}
+
+nav li:hover {
+  background-color: rgba(2, 84, 100, 0.5);
+}
+
+nav a {
+  color: white;
+}
+
+/* Fin nav */
+
+/* Inicio main */
+
+main {
+  padding: 10px;
+  background-color: rgb(170, 150, 150);
+}
+
+main article.txt1 {
+  width: 50%;
+  background-color: rgb(220, 200, 200);
+}
+
+main article.txt2 {
+  width: 50%;
+  background-color: rgb(220, 200, 200);
+}
+
+main div {
+  display: flex;
+  background-color: rgb(220, 200, 200);
+}
+
+/* Fin main */
+
+footer{
+    padding: 10px;
+    background-color: rgb(92, 137, 132);
+    text-align: center;
+    color: white;
+}
