@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -21,19 +21,22 @@
   <body>
     <!-- Inicio cabecera -->
     <header class="container">
-      <h1><span>P</span>ersona</h1>
-      <h2>Personaje famoso</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        iusto beatae aut fugiat facere quam tenetur placeat commodi quo enim
-        maxime, earum impedit, similique qui doloribus harum voluptas nisi
-        nulla.
-      </p>
+      <div class="headerTxt">
+        <h1><span>T</span>ítulo</h1>
+        <h2>Segundo título</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          iusto beatae aut fugiat facere quam tenetur placeat commodi quo enim
+          maxime, earum impedit, similique qui doloribus harum voluptas nisi
+          nulla.
+        </p>
+      </div>
+      <img src="assets/img/fondo-montaña.jpg" alt="" />
     </header>
     <!-- Fin cabecera -->
 
     <!-- Inicio barra navegación -->
-    <nav class="nav">
+    <nav class="navContainer">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="pages/biografia.html">Biografía</a></li>
@@ -44,10 +47,10 @@
     <!-- Fin barra navegación -->
 
     <!-- Inicio contenido principal -->
-    <main>
+    <main class="flexContainer">
       <!-- Inicio contenedor texto -->
 
-      <article class="txt1">
+      <section class="textContainer">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
           provident, rerum exercitationem asperiores aut magni saepe labore
@@ -57,9 +60,9 @@
           repellat suscipit, facere sunt quae saepe sed quo aperiam, nam sit
           quam mollitia minima labore quia.
         </p>
-      </article>
+      </section>
 
-      <article class="txt2">
+      <section class="textContainer">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
           nesciunt minus placeat reiciendis tenetur illum porro, natus adipisci,
@@ -69,24 +72,21 @@
           natus doloribus nisi, non, vitae itaque nemo iste eos rerum ipsam
           laboriosam nihil dolorem veniam delectus. Sit?
         </p>
-      </article>
+      </section>
 
       <!-- Fin contenedor texto -->
 
       <!-- Inicio contenedor imagen -->
-      <div>
-        <img
-          class="imgPersona"
-          src="assets/img/neom-8Ln8oMv_LLI-unsplash.jpg"
-          alt="Persona"
-        />
-      </div>
+      <figure class="imgContainer">
+        <img src="assets/img/neom-8Ln8oMv_LLI-unsplash.jpg" alt="Persona" />
+        <figcaption>Pie de imágen</figcaption>
+      </figure>
       <!-- Fin contenedor imagen -->
     </main>
     <!-- Fin contenido principal -->
 
     <!-- Inicio pie de página -->
-    <footer>
+    <footer class="container">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex
         recusandae repellat dicta sint, sequi optio officiis tempore repellendus
