@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biografía</title>
+    <title>Web</title>
 
     <!-- Hojas de estilo -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 
     <!-- Tipo de fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,8 +18,76 @@
       rel="stylesheet"
     />
   </head>
-  
-<body>
-    
-</body>
+
+  <body>
+    <!-- Inicio cabecera -->
+    <header class="headerContainerForm">
+      <h1 class="titulo">Formulario</h1>
+    </header>
+    <!-- Fin cabecera -->
+
+    <main class="mainContainerForm">
+      <form action="" method="get" class="formContainer">
+        <div class="divContainerForm">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+        </div>
+
+        <div class="divContainerForm">
+          <label for="apellido">Apellidos</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Apellidos"
+          />
+        </div>
+
+        <div class="divContainerForm">
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Contraseña"
+          />
+        </div>
+
+        <div class="divContainerForm">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
+
+        <div class="divContainerForm">
+          <label for="tel">Teléfono</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="Número de teléfono"
+          />
+        </div>
+
+        <div class="divContainerForm">
+          <label for="address">Dirección</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Dirección"
+          />
+        </div>
+
+        <div class="divContainerForm">
+          <label for="genero">Género</label>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+        </div>
+
+        <div class="divContainerForm">
+          <input type="submit" name="submit" id="submit" />
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
