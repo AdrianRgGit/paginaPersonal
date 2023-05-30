@@ -160,6 +160,46 @@ figure.imgContainer figcaption {
 
 /* Fin Main Index */
 
+/* Main portfolio */
+
+main.mainContainerPortfolio article.articleContainerPortfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(128, 128, 128);
+}
+
+article.articleContainerPortfolio figure {
+  text-align: center;
+}
+
+article.articleContainerPortfolio p,
+figure,
+video,
+audio,
+figcaption {
+  margin: 10px;
+}
+
+article.articleContainerPortfolio figure.figureContainerAudioPortfolio {
+  padding: 20px;
+}
+
+article.articleContainerPortfolio p {
+  text-align: justify;
+}
+
+article.articleContainerPortfolio figcaption {
+  width: 50%;
+  margin: auto;
+  color: rgb(70, 100, 70);
+  font-size: 1.5rem;
+  background-color: rgb(120, 120, 120);
+}
+
+/* Fin main portfolio */
+
 /* Main Formulario */
 
 main.mainContainerForm {
@@ -308,6 +348,21 @@ footer.footerContainer p {
 
   /* Fin Main index 768px*/
 
+  /* main Portfolio */
+
+  article.articleContainerPortfolio section.sectionContainerImgPortfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  figure.imgContainerPortfolio {
+    width: 45%;
+  }
+
+  /* Fin main portfolio */
+
   /* Main form 768px*/
 
   form.formContainer {
@@ -346,6 +401,17 @@ footer.footerContainer p {
   }
 
   /* Fin Barra de navegación 992px*/
+
+  /* main Portfolio 992px */
+
+  figure.imgContainerPortfolio {
+    width: 30%;
+  }
+
+  section.sectionContainerTxtPortfolio{
+    max-width: 992px;
+  }
+  /* Fin main porfolio 992px */
 
   /* Main Form 992px*/
 
