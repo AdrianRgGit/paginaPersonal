@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  background-color: rgb(40, 40, 50);
 }
 
 img {
@@ -64,14 +65,26 @@ header.headerContainer div.headerTxt p {
 
 /* Header Formulario */
 
-header.headerContainerForm {
+header.formHeaderContainer {
+  width: 80%;
   margin: 20px auto;
+  /* background-color: white; */
 }
 
-header.headerContainerForm h1 {
+header.formHeaderContainer h1,
+p {
+  color: white;
+}
+
+header.formHeaderContainer h1 {
   text-align: center;
+  font-size: 2.25rem;
 }
 
+header.formHeaderContainer p {
+  text-align: justify;
+  font-size: 0.75rem;
+}
 /* Fin Header Formulario */
 
 /* Fin Header*/
@@ -124,9 +137,7 @@ main.mainContainer section {
   /* margin-bottom: 10px; */
   padding: 10px;
   background-color: rgb(140, 140, 140);
-}
-
-main.mainContainer section.textContainer2 {
+  border: 1px solid rgb(80, 80, 100);
   margin-bottom: 10px;
 }
 
@@ -138,6 +149,7 @@ main.mainContainer p {
 figure.imgContainer {
   /* De momento le añado el fondo blanco a todo el contenedor de la imágen debido a que si se lo doy sólo al figcaption, me hace bien el fondo pero no se pega a la foto ya que su contenedor es más pequeño */
   background-color: rgb(210, 210, 210);
+  border: 1px solid rgb(80, 80, 100);
 }
 
 figure.imgContainer figcaption {
@@ -158,16 +170,41 @@ form.formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: space-between;
-  gap: 30px;
-
-  border: solid grey;
+  background-color: rgb(158, 158, 158);
+  border: solid rgb(198, 198, 198);
   width: 100%;
 }
 
-div.divContainerForm {
-  /* margin: 10px; */
-  /* border: solid red; */
+div.divContainerForm,
+.divContainerSubmit {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+div.divContainerSubmit {
+  align-items: center;
+}
+
+div.divContainerForm input,
+select {
+  height: 25px;
+  border: solid 1.5px rgb(80, 80, 100);
+  padding-left: 5px;
+}
+
+div.divContainerForm input:hover,
+select:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.divContainerSubmit input {
+  text-align: center;
+  width: 150px;
+  height: 30px;
 }
 
 /* Fin main formulario */
@@ -193,16 +230,29 @@ footer.footerContainer p {
 
 @media screen and (min-width: 768px) {
   /* Header 768px*/
+  /* Header index 768px*/
 
-  header.container {
+  header.headerContainer {
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
-  header.container div.headerTxt {
-    width: 768px;
+  header.headerContainer div.headerTxt {
     text-align: center;
+    max-width: 768px;
   }
+
+  /* Fin Header index 768px*/
+
+  /* Header Form 768px*/
+
+  header.formHeaderContainer p {
+    margin: auto;
+    max-width: 614.4px;
+  }
+
+  /* Fin Header Form 768px*/
 
   /* Header 768px*/
 
@@ -220,7 +270,7 @@ footer.footerContainer p {
 
   /* Fin Barra de navegación 768px*/
 
-  /* Main 768px*/
+  /* Main index 768px*/
 
   main.mainContainer {
     display: flex;
@@ -239,27 +289,49 @@ footer.footerContainer p {
 
   main.mainContainer section.textContainer1 {
     order: 1;
-
-    /* border: solid green; */
   }
 
   main.mainContainer section.textContainer2 {
     order: 3;
-
-    /* border: solid yellow; */
   }
 
   figure.imgContainer {
     order: 2;
     max-width: 50%;
-    /* max-width: 420px; */
-    /* PREGUNTAR ESTO, PORQUE LE DEBO DE PONER UNA ALTURA (QUE NO QUIERO PONERLE) PARA QUE SE ALINEE AL CENTRO DEL CONTENEDOR */
-    height: 100px;
+    position: relative;
+    top: 187px;
+
+    /* height: 100px; */
 
     /* border: solid purple; */
   }
 
-  /* Fin Main 768px*/
+  /* Fin Main index 768px*/
+
+  /* Main form 768px*/
+
+  form.formContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(158, 158, 158);
+    border: solid rgb(198, 198, 198);
+    width: 100%;
+  }
+
+  div.divContainerForm,
+  .divContainerSubmit {
+    margin: 10px auto;
+    width: 45%;
+  }
+
+  div.divContainerSubmit {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Fin Main form 768px*/
 }
 
 /* 768px */
@@ -274,6 +346,15 @@ footer.footerContainer p {
   }
 
   /* Fin Barra de navegación 992px*/
+
+  /* Main Form 992px*/
+
+  main.mainContainerForm {
+    margin: 0 auto;
+    max-width: 992px;
+  }
+
+  /* Fin main Form 992px*/
 }
 
 /* 992px */
