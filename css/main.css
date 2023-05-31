@@ -133,6 +133,14 @@ main.mainContainer section {
   margin-bottom: 10px;
 }
 
+main.mainContainer h3 {
+  font-size: 1.25rem;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: rgb(39, 55, 77);
+  text-decoration: underline rgb(39, 55, 77);
+}
+
 main.mainContainer p {
   text-align: justify;
   color: white;
@@ -193,25 +201,32 @@ article.articleContainerPortfolio figure {
   text-align: center;
 }
 
-section.sectionContainerTxtPortfolio{
+section.sectionContainerTxtPortfolio {
   background-color: rgb(157, 178, 191);
   border: 1px solid rgb(80, 80, 100);
 }
 
-article.articleContainerPortfolio,
+article,
 figure,
-video,
-audio,
+section,
+
 figcaption {
   margin: 10px;
 }
 
-article.articleContainerPortfolio p{
+article.articleContainerPortfolio p {
   padding: 10px;
   text-align: justify;
 }
 
-article.articleContainerPortfolio figcaption {
+section.sectionContainerVidPortfolio{
+  padding: 10px;
+  margin: 10px auto;
+  background-color: rgb(157, 178, 191);
+}
+
+article.articleContainerPortfolio figcaption, section.sectionContainerVidPortfolio p {
+  text-align: center;
   width: 50%;
   margin: auto;
   color: white;
@@ -332,15 +347,12 @@ footer.footerContainer p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-items: center;
-    /* align-content: space-around; */
+    align-content: space-evenly;
   }
 
   main.mainContainer section {
-    display: flex;
     width: 45%;
-    margin-left: 25px;
     margin-bottom: 10px;
     padding: 15px;
   }
@@ -449,4 +461,24 @@ footer.footerContainer p {
   }
 
   /* fin footer 992px */
+}
+
+@media screen and (min-width: 1200px) {
+  /* Main index 1200px*/
+
+  main.mainContainer {
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+
+  main.mainContainer section {
+    display: grid;
+    align-content: center;
+  }
+
+  figure.imgContainer {
+    top: 0px;
+  }
+
+  /* Fin Main index 1200px*/
 }
