@@ -21,6 +21,7 @@
 
   
   <body>
+    
     <!-- Inicio barra navegación -->
     <nav class="navContainer">
       <ul>
@@ -49,7 +50,7 @@
       <form action="" method="get" class="formContainer">
         <div class="divContainerForm">
           <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required/>
         </div>
 
         <div class="divContainerForm">
@@ -59,12 +60,13 @@
             id="apellido"
             name="apellido"
             placeholder="Apellidos"
+            required
           />
         </div>
 
         <div class="divContainerForm">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" />
+          <input type="email" id="email" name="email" placeholder="Email" required/>
         </div>
 
         <div class="divContainerForm">
@@ -74,6 +76,7 @@
             id="tel"
             name="tel"
             placeholder="Número de teléfono"
+            required
           />
         </div>
 
